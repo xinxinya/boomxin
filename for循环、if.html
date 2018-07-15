@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var score = 80;
+
+        // // 59不及格 60-70及格 70-80良 80-90优秀 90-100卓越
+        // if(score < 60 && score > 0) {
+        //     console.log('不及格');
+        // }else if (score < 70) {
+        //     console.log('及格');
+        // }else if (score < 80) {
+        //     console.log('良');
+        // }else if (score < 90) {
+        //     console.log('优秀');
+        // }else if (score <= 100) {
+        //     console.log('卓越');
+        // }else {
+        //     console.log('作弊');
+        // }
+
+
+
+
+        // 1-->初始化 var i = 0;
+        // 2-->条件判断  i < 10;
+        // 2-> ture -> 3    2-> false -> end
+        // 3-->执行
+        // 4--> i = i + 1;
+
+
+        // for (var i = 0; i < 10; i = i + 1) {
+        //     console.log(i);
+        // }
+
+
+        // 计算1+2+3...加到多少大于350
+        // 1.
+        // var sum = 0;
+        // for (var flag = ture, index = 1; flag; index++) {
+        //     sum = sum + index;
+        //     if (sum > 350) {
+        //         flag = false;
+        //         console.log(index);
+        //     }
+        // }
+        // 2.
+        // for (var sum = 0, i = 1; sum <=350; i++) {
+        //     sum = sum + i;
+        // }
+        // console.log( i - 1 );
+
+
+        // var arr = ['a', 'b', 'c', 'd'];
+        // for (var i = 0; i < arr.length; i++)  {
+        //     console.log( arr[i] );
+        // }
+
+
+        // var sum = 0;
+        // var index = 1;
+        // while (sum<=350) {
+        //     index++;
+        //     sum += index;
+        // }
+        // console.log(index);
+
+// -------------------------------------------------------------------------------------------------------------------------------------------
+        //计算2的n次幂，n可以输入，n为自然数
+        // var n =parseInt( window.prompt() );
+        // for (var sum = 1, i= 0; i < n; i++) {
+        //     sum *=2;
+        // }
+        // console.log(sum);
+
+// -------------------------------------------------------------------------------------------------------------------------------------------
+        // 计算n的阶乘 n可输入
+        // var n = parseInt( window.prompt() );
+        // for (var sum = 1, i = 1; i <= n; i++) {
+        //     sum = sum * i;
+        // }        
+        // console.log(sum);
+// -------------------------------------------------------------------------------------------------------------------------------------------
+        // 斐波那契额数列 1 1 2 3 5 8...输出第n项
+        
+        //   1        1          2          3         5          8
+        // first +  second  =  last
+        //            ↓         ↓
+        //          first   +  second  =  last
+        //                       ↓         ↓
+        //                     first   +  second  =  last
+        //                                   ↓         ↓ 
+        //                                first   +  second  =  last
+
+
+        // var first = 1;
+        // var second = 1;
+        // var last = 0;
+        // var n = parseInt( window.prompt() );
+        // if (n == 1 || n== 2) {
+        //     console.log(1);
+        // }else {
+        //     for (var i = 0; i < n - 2; i++) {
+        //         last = first + second;
+        //         first = second;
+        //         second = last;
+        //     }
+        //     console.log(last);
+
+
+// -------------------------------------------------------------------------------------------------------------------------------------------
+
+
+        // 编写一个程序，输入一个三位数的正整数，输出时反向输出。如：输入456，输出654.
+ 
+        // var num = 456;
+        // var a, b ,c;
+        // a = num % 10;
+        // b = (num - a) / 10 % 10;
+        // c = (num - a - b * 10) / 100;
+        // num = a * 100 + b * 10 + c;
+        // console.log(num);
+
+
+//  -------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+        // 输入a,b,c三个数字，打印出最大的
+        // var a = parseInt( window.prompt() );
+        // var b = parseInt( window.prompt() );
+        // var c = parseInt( window.prompt() );
+
+        // var max = a;
+        // if (max < b) {
+        //     max = b;
+        // }
+        // if (max < c ) {
+        //     max = c;
+        // }
+        // console.log(max);
+
+
+
+// -------------------------------------------------------------------------------------------------------------------------------------------
+
+
+        // 1到100以内的质数
+        for (var i = 1; i < 100; i++) {
+
+            // 看1--i是否能整除他↓
+            var count = 0;
+            for (var j = 1; j <= i; j++) {
+                if (i % j == 0) {
+                    count++;
+                }
+            }
+            if (count == 2) {
+                console.log(i);
+            }
+        }
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
