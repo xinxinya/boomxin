@@ -1,0 +1,202 @@
+/* .demo {
+    width: 100px;
+    height: 100px;
+    background: orange;
+}
+
+#oDiv {
+    width: 50px;
+    height: 50px;
+    background: green;
+} */
+/*
+     选择器  seletor
+     标签选择器 tag seletor
+     类名选择器 class seletor   '.' + class
+     id选择器 id seletor    '#' + id
+     通配符选择器 *
+ */
+
+/* div {
+    width: 100px;
+    height: 100px;
+    background: orange;
+}
+
+.demo {
+    background: red;
+}
+
+div {
+    background-color: pink !important;
+} */
+
+/*
+    优先级问题
+    同种选择器按顺序
+    类名选择器优先级大于标签选择器
+    id选择器优先级大于类名选择器
+    通配符选择器优先级最小
+    !important > 行间样式 > id > class >tag > *
+ */
+
+ /*
+   父子选择器（派生选择器） 
+  */
+
+
+/* div {
+    /* font-size: 18px;    修改文本尺寸 */
+    /* font-family: arial; 设置文本字体 */
+    /* font-weight: bold;  设置文字粗细 lighter normal bold bolder 也可填数字 */
+    /* color: red;     设置字体颜色 */
+    /* border: 1px 边框粗细 solid 边框为实线 #f40 边框颜色; */
+    /* height: 100px; */
+    /* text-align: center;  文本居中 */
+    /* line-height: 100px;  文本垂直居中 */
+    /* text-indent: 2em;  文本首行缩进2个font-size的大小 */
+    /* text-decoration: underline; underline下划线  line-through中划线 overline上划线  */
+    /* cursor: pointer;  鼠标碰到文本变成小手 */
+/* }  */
+
+
+/*
+   块级标签
+   1.独占一整行
+   2.可以通过css设置宽高
+   div p address ul li ol form h1-h6
+   
+   
+   行级标签
+   1.根据自身内容大小决定其所占据的空间
+   2.不可以通过css设置宽高
+   span a em strong del
+
+
+   行级块标签
+   1.根据自身内容大小决定其所占据的空间
+   2.可以通过css样式设置宽高
+   img input
+ */
+
+ /*
+     display:  
+  */
+
+
+/*
+    盒子模型
+    content padding border 
+    
+ */
+
+
+ /*
+    margin塌陷 
+    解决方法 1.加个border-top（基本上不用）
+            2.overflow: hidden;
+            3.position: obsolute;
+            4.float: lefr;
+            5.display: inline-block; 
+*/
+
+/*
+    层模型
+    position: absolute; 绝对定位
+    1.脱离原来位置
+    2.找离他最近有定位的父级进行定位，最后会 参照浏览器边框进行定位
+    position: relative; 相对定位
+    1.保留原来位置进行定位
+    2.参照原来位置进行定位
+    position: fixe；    固定
+    position: static；  静止 
+  
+*/
+
+/*
+    浮动模型
+    浮动的标签只能被具有文本特性的标签所看的
+    触发bfc的标签
+ */
+
+ /* .wrapper {
+     width: 400px;
+     border: 2px solid orange;
+ }
+
+ .wrapper div {
+     float: left;
+     width: 100px;
+     height: 100px;
+     border: 1px solid black;
+     background: red;
+ }
+
+ .wrapper::after {
+     content: '';
+     display: block;
+     clear: both;
+ } */
+
+/* text-overflow: ellipsis; 文本溢出部分显示为省略号 */
+/* white-space: nowrop; 文本强制不折行 */
+
+/* --------------------------------------------------------------- */
+
+
+.showSection {
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 140px;
+    padding: 5px 6px;
+}
+
+.showSection .imgSection img {
+    transition: all 0.5s ease;
+}
+
+.showSection .imgSection {
+    background-color: #4f4f4f;
+}
+
+.showSection .imgSection img {
+    opacity: 0.9;
+    width: 140px
+}
+
+.showSection:hover .imgSection img {
+    opacity: 0.7;
+}
+
+.showSection p a {
+    text-decoration: none;
+}
+
+.showSection .name a {
+    font-size: 18px;
+    color: black;
+}
+
+.showSection .des {
+    overflow: hidden;
+    text-overflow: ellipsis;        
+}
+
+.showSection .des a {
+    white-space: nowrap;
+    color: #999;
+}
+
+.showSection .good {
+    color: #35b1ff;
+}
+
+.showSection:hover .name a {
+    color: #f40;
+}
+
+.showSection .name a {
+    transition: all 0.5s ease;
+}
+
