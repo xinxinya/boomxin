@@ -1,0 +1,158 @@
+* {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+/* 导航栏 */
+.navSection {
+    height: 60px;
+}
+
+.navSection ul::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.navSection ul li {
+    height: 60px;
+    float: right;
+    line-height: 60px;
+    margin-right: 17px;
+}
+/* 凡是修饰文本的属性都能被继承 如：字体，大小、颜色等 */
+
+.navSection ul li a {
+    color: #333;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.navSection ul .light a {
+    font-weight: normal;
+}
+
+.navSection ul .more {
+    margin-right: 20px;
+}
+
+.navSection ul .more a {
+    color: #fff;
+    background: #38f;
+    padding: 4px 4px;
+    text-decoration: none;
+    font-weight: normal;
+}
+/* 搜索框 */
+
+.searchSection {
+    text-align: center;    
+}
+
+.searchSection .logoSection {
+    margin-bottom: 20px;
+}
+
+.searchSection .logoSection img {
+    width: 270px;
+    height: 129px;
+}
+
+.searchSection form div {
+    display: inline-block;
+}
+
+.searchSection form .inputSection {
+    vertical-align: top;
+    position: relative;
+}
+
+.searchSection form .inputSection input {
+    width: 539px;
+    height: 34px;
+    padding-left: 15px;
+}
+
+.searchSection form .inputSection span {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    width: 18px;
+    height: 16px;
+    margin-top: -8px;
+    background-image: url(../img/camera.png);
+    background-position: 0px 0px;
+    cursor: pointer;
+}
+
+.searchSection form .inputSection span:hover {
+    background-position: 0px -20px;
+}
+
+.searchSection form .buttonSection {
+    margin-left: -5px;
+}
+
+.searchSection form .buttonSection input {
+    width: 100px;
+    height: 38px;
+    background: #3385ff;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* 信息栏 */
+.infoSection {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.infoSection .codeSection {
+    margin-bottom: 20px;
+}
+
+.infoSection .codeSection span {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    color: #666;
+}
+
+.infoSection .msSection {
+    color: #999;
+    font-size: 12px;
+}
+
+.infoSection .msSection p a {
+    color: #999;
+    font-size: 12px;
+}
+
+.infoSection .msSection .topP {
+    margin-bottom: 10px;
+}
+
+.infoSection .msSection .topP a {
+    padding-left: 15px;
+}
+
+.infoSection .msSection .bottomP span {
+    display: inline-block;
+    width: 14px;
+    height: 17px;
+    margin-left: -7px;
+    margin-right: 20px;
+    overflow: hidden;
+    background-image: url('https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/img/icons_5859e57.png')
+}
+
+.infoSection .msSection .bottomP .icon1 {
+    background-position: -600px -96px;
+}
+
+.infoSection .msSection .bottomP .icon2 {
+    background-position: -623px -96px;
+    margin-left: -2px;
+}
