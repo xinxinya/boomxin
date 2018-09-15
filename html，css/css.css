@@ -200,3 +200,7 @@ div {
     transition: all 0.5s ease;
 }
 
+ /* background-size: 100px 100px; 
+background-size:50% 50%;         改变背景图片大小 */
+/* background-repeat: no-repeat 背景图片重复 */
+/* background-position:  背景图片位置 */
